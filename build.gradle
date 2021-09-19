@@ -1,7 +1,18 @@
 buildscript {
 	repositories {
+		maven { url "https://maven.aliyun.com/repository/central" }
+		maven { url "https://maven.aliyun.com/repository/public" }
+		maven { url "https://maven.aliyun.com/repository/public" }
+		maven { url "https://maven.aliyun.com/repository/google" }
+		maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
+		maven { url "https://maven.aliyun.com/repository/spring" }
+		maven { url "https://maven.aliyun.com/repository/spring-plugin" }
+		mavenCentral()
+		maven { url "https://repo.spring.io/libs-spring-framework-build" }
+		maven { url "http://repo.springsource.org/plugins-release" }
 		gradlePluginPortal()
 		maven { url "https://repo.spring.io/plugins-release" }
+		maven { url "http://repo.springsource.org/plugins-release" }
 	}
 	dependencies {
 		classpath("io.spring.gradle:propdeps-plugin:0.0.9.RELEASE")
@@ -130,6 +141,16 @@ configure(allprojects) { project ->
 	}
 
 	repositories {
+		maven { url "https://maven.aliyun.com/repository/central" }
+		maven { url "https://maven.aliyun.com/repository/public" }
+		maven { url "https://maven.aliyun.com/repository/public" }
+		maven { url "https://maven.aliyun.com/repository/google" }
+		maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
+		maven { url "https://maven.aliyun.com/repository/spring" }
+		maven { url "https://maven.aliyun.com/repository/spring-plugin" }
+		mavenCentral()
+		maven { url "https://repo.spring.io/libs-spring-framework-build" }
+		maven { url "http://repo.springsource.org/plugins-release" }
 		mavenCentral()
 		maven { url "https://repo.spring.io/libs-spring-framework-build" }
 	}
